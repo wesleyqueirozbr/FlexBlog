@@ -92,8 +92,8 @@ img {
 /* sobre */
 
 .sobre {
-    border-top: 2px solid #122ab2;
-    border-bottom: 2px solid #122ab2;
+    border-top: 2px solid #2c70ff;
+    border-bottom: 2px solid #2c70ff;
     max-width: 960px;
     margin: 0 auto;
     padding: 60px 10px;
@@ -117,4 +117,136 @@ img {
     line-height: 1.4;
     margin-bottom: 1rem;
     color: #7c7c7c;
+}
+
+/* Produtos */
+
+.produtos {
+    max-width: 960px;
+    margin: 60px auto;
+}
+
+.produtos h1 {
+    margin: 0 10px 60px 10px;
+    font-size: 3rem;
+}
+
+.produtos-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    margin: 0 10px;
+    flex-wrap: wrap;
+}
+
+.produtos-container h2 {
+    font-size: 3rem;
+    color: #a4a4a4;
+    padding: 60px 20px;
+}
+
+.produtos-item {
+    background: #f7f7f7;
+    border-top: 8px solid transparent;
+    flex: 1 1 175px;
+}
+
+.produtos-item.purple {
+    border-color:#AE81FF;
+}
+
+.produtos-item.pink {
+    border-color:#F9265E;
+}
+
+.produtos-item.blue {
+    border-color:#66D9EB;
+}
+
+/* Preço */
+
+.preco {
+    background: #f7f7f7;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.preco-item {
+    flex: 1 0 260px;
+    border: 4px solid #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.preco-item h2{
+    font-size: 3rem;
+    color: #a4a4a4;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.preco-item span {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+    border-top:4px solid #fff ;
+    border-bottom:4px solid #fff;
+    font-size: 3rem;
+}
+.preco-item sup {
+    font-size: 1.5rem;
+}
+
+.preco-item ul {
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #7c7c7c;
+}
+
+.preco-item li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.preco-item li::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px; 
+    background: #2c70ff;
+    border-radius: 50%;
+}
+
+.preco-item a {
+    display: block;
+    margin: 20px auto;
+    border: 4px solid #222;
+    color: #222;
+    font-size: 2.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    max-width: 300px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+@media (max-width:800px) {
+    .preço {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .preco-item:nth-child(1){
+        order: 1;
+    }
+    .preco-item:nth-child(3) {
+        order: -1;
+    }
 }
