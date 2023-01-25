@@ -66,7 +66,6 @@ img {
 .menu-nav ul {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
 }
 
@@ -78,4 +77,44 @@ img {
 
 .menu-nav a:hover {
     color: #122ab2;
+}
+
+/* introducao */
+
+.introducao {
+    font-size: 3rem;
+    line-height: 1;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 10px;
+}
+
+/* sobre */
+
+.sobre {
+    border-top: 2px solid #122ab2;
+    border-bottom: 2px solid #122ab2;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 10px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sobre-info {
+    flex: 2 1 300px;
+}
+.sobre-img {
+    flex: 1 1 160px;
+}
+.sobre-info h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.sobre-info p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    color: #7c7c7c;
 }
